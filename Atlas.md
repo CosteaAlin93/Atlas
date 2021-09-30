@@ -47,3 +47,25 @@ The answer is found in the bottom of the nmap scan.
 
 ## Task 3 Enumeration: Service Enumeration 
 
+Doing the scan as suggested above, will contain this part.
+First service : 3389 RDP: Remote Desktop Protocol, used to get remote graphic desktop session ;
+Second service: 8080 HTTP-PROXY 
+  By accessing it into a web browser, we get prompted to authenticate 
+  
+  ![image](https://user-images.githubusercontent.com/86648102/135415966-53b1a5c3-f48d-4460-9347-050d2b1c753a.png)
+
+We're going to curl the target to get more info:
+
+`curl $ip:8080 -v`
+
+
+**Answer the questions below**
+
+
+### Use searchsploit to find the vulnerability in ThinVNC
+
+`searchsploit ThinVNC`
+
+![image](https://user-images.githubusercontent.com/86648102/135416567-0b2b2e07-a0ba-4c51-a8c0-a9a48f692f5c.png)
+
+
