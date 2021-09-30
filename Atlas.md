@@ -15,7 +15,7 @@ This is an introductory level room which aims to teach you the very basics of Wi
 
 ---
 
-## Task 2 Enumeration Port Scanning 
+## Task 2 Enumeration: Port Scanning 
 
 **Enumeration** is probably the most important thing when comes to solving any challenge.
 
@@ -34,7 +34,16 @@ Reffer to the above **scan** ; the 2 ports are appearing quickly with the verbos
 
 ### What service does Nmap think is running on the higher of the two ports?
 
+The answer is found in the bottom of the nmap scan.
+
+![image](https://user-images.githubusercontent.com/86648102/135414498-baf3e3fd-48f5-4cfd-b10f-db34df0682c7.png)
+
 
 ### We would usually go on to do a lot more in-depth scanning, but we will leave it at that for this introductory room. We have what we need for the time being.
 
-> Here, it;s a reference for the nmap scan switches mentioned above. 
+> Here, it's a reference for the nmap scan switches mentioned above. 
+
+---
+
+## Task 3 Enumeration: Service Enumeration 
+
