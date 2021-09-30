@@ -13,7 +13,8 @@ This is my writeup for the TryHackMe room [Atlas](https://tryhackme.com/room/atl
 ### Press the Green "Start Machine" button to deploy the machine!
  
  > No answer needed.
-
+<br>
+ <br>
  </details>
 
 <details><summary> Task 2 Enumeration: Port Scanning </summary>
