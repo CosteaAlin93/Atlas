@@ -4,7 +4,7 @@ This is my writeup for the TryHackMe room [Atlas](https://tryhackme.com/room/atl
 ![image](https://user-images.githubusercontent.com/86648102/135411347-8f13e0b8-c5c2-4758-ba25-e839550dc248.png)
 
 <details><summary> Task 1 Introduction Room Overview and Deploy! </summary>
- 
+ <br>
 
  This is an introductory level room which aims to teach you the very basics of Windows system exploitation, from initial access, through to privilege escalation.
 
