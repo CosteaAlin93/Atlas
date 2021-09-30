@@ -14,7 +14,7 @@ This is my writeup for the TryHackMe room [Atlas](https://tryhackme.com/room/atl
  
  > No answer needed.
 <br>
- <br>
+ 
  </details>
 
 <details><summary> Task 2 Enumeration: Port Scanning </summary>
@@ -44,7 +44,7 @@ The answer is found in the bottom of the nmap scan.
 ### We would usually go on to do a lot more in-depth scanning, but we will leave it at that for this introductory room. We have what we need for the time being.
 
 > Here, it's a reference for the nmap scan switches mentioned above. 
-
+<br>
   </details>
   
 
@@ -72,8 +72,7 @@ We're going to curl the target to get more info:
 
 ![image](https://user-images.githubusercontent.com/86648102/135416567-0b2b2e07-a0ba-4c51-a8c0-a9a48f692f5c.png)
 
- </details>
- 
+<br>
 </details>
 
 <details><summary> Task 4 Attack Foothold </summary>
@@ -115,7 +114,7 @@ We could use the inbrowser version or we could use Remmina for this task.
 
 ![image](https://user-images.githubusercontent.com/86648102/135423850-0946b3ae-e6bb-42ed-add1-b3c41bd35e02.png)
 
-
+<br>
 </details>
 
 <details><summary> Task 5 Access VNC <> RDP  </summary>
@@ -128,7 +127,7 @@ However, the mentioned method here is working too.
 `xfreerdp /v:10.10.200.252 /u:USERNAME /p:PASSWORD /cert:ignore +clipboard /dynamic-resolution /drive:/tmp,share`
 
 > Replace USERNAME and PASSWORD arguments with your findings
-
+<br>
 </details>
 
 <details><summary> Task 6 Attack Privilege Escalation  </summary>
@@ -173,7 +172,7 @@ Run `whoami /groups`
 ![image](https://user-images.githubusercontent.com/86648102/135427571-8b68d13f-14b7-4367-9aa3-007fc66231b2.png)
 
 Good. We now have admin on this machine.
-
+<br>
 </details>
 
 <details><summary> Task 7 Attack Post Exploitation  </summary>
@@ -212,7 +211,7 @@ Found in the output of :
 > this will provide us with a list of password hashes for every account on the machine
 
 ![image](https://user-images.githubusercontent.com/86648102/135430241-41c128b6-e617-4187-9dac-350418c37c0c.png)
-
+<br>
 </details>
 
 <details><summary> Task 8 Conclusion Final Thoughts  </summary>
@@ -222,7 +221,7 @@ Found in the output of :
 Congratulations -- you hacked Atlas!
 
 **We covered initial exploitation of outdated software, as well as exploiting the Windows PrintSpooler and dumping password hashes with Mimikatz.**
-
+<br>
 </details>
 
 
