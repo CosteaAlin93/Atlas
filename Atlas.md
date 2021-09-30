@@ -3,19 +3,20 @@ This is my writeup for the TryHackMe room [Atlas](https://tryhackme.com/room/atl
 
 ![image](https://user-images.githubusercontent.com/86648102/135411347-8f13e0b8-c5c2-4758-ba25-e839550dc248.png)
 
----
+<details><summary> Task 1 Introduction Room Overview and Deploy! </summary>
+ 
 
-## Task 1 Introduction Room Overview and Deploy! 
-
-This is an introductory level room which aims to teach you the very basics of Windows system exploitation, from initial access, through to privilege escalation.
+ This is an introductory level room which aims to teach you the very basics of Windows system exploitation, from initial access, through to privilege escalation.
 
 **Answer the questions below**
 
 ### Press the Green "Start Machine" button to deploy the machine!
+ 
+ > No answer needed.
 
----
+ </details>
 
-## Task 2 Enumeration: Port Scanning 
+<details><summary> Task 2 Enumeration: Port Scanning </summary>
 
 **Enumeration** is probably the most important thing when comes to solving any challenge.
 
@@ -43,9 +44,10 @@ The answer is found in the bottom of the nmap scan.
 
 > Here, it's a reference for the nmap scan switches mentioned above. 
 
----
+  </details>
+  
 
-## Task 3 Enumeration: Service Enumeration 
+<details><summary> Task 3 Enumeration: Service Enumeration </summary>
 
 Doing the scan as suggested above, will contain this part.
 - First service : 3389 RDP: Remote Desktop Protocol, used to get remote graphic desktop session ;
@@ -69,9 +71,11 @@ We're going to curl the target to get more info:
 
 ![image](https://user-images.githubusercontent.com/86648102/135416567-0b2b2e07-a0ba-4c51-a8c0-a9a48f692f5c.png)
 
----
+ </details>
+ 
+</details>
 
-## Task 4 Attack Foothold 
+<details><summary> Task 4 Attack Foothold </summary>
 
 **Answer the questions below**
 
@@ -111,11 +115,10 @@ We could use the inbrowser version or we could use Remmina for this task.
 ![image](https://user-images.githubusercontent.com/86648102/135423850-0946b3ae-e6bb-42ed-add1-b3c41bd35e02.png)
 
 
----
+</details>
 
-## Task 5 Access VNC <> RDP 
+<details><summary> Task 5 Access VNC <> RDP  </summary>
 
----
 
 If the above step worked for you, then you should be already conencted to the machine via Remmina.
 
@@ -125,9 +128,9 @@ However, the mentioned method here is working too.
 
 > Replace USERNAME and PASSWORD arguments with your findings
 
----
+</details>
 
-## Task 6 Attack Privilege Escalation 
+<details><summary> Task 6 Attack Privilege Escalation  </summary>
 
 --- 
 
@@ -170,9 +173,9 @@ Run `whoami /groups`
 
 Good. We now have admin on this machine.
 
----
+</details>
 
-## Task 7 Attack Post Exploitation 
+<details><summary> Task 7 Attack Post Exploitation  </summary>
 
 ---
 **Answer the questions below**
@@ -209,9 +212,9 @@ Found in the output of :
 
 ![image](https://user-images.githubusercontent.com/86648102/135430241-41c128b6-e617-4187-9dac-350418c37c0c.png)
 
----
+</details>
 
-## Task 8 Conclusion Final Thoughts 
+<details><summary> Task 8 Conclusion Final Thoughts  </summary>
 
 ---
 
@@ -219,7 +222,7 @@ Congratulations -- you hacked Atlas!
 
 **We covered initial exploitation of outdated software, as well as exploiting the Windows PrintSpooler and dumping password hashes with Mimikatz.**
 
-
+</details>
 
 
 
