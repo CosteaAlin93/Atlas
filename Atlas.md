@@ -113,7 +113,7 @@ We could use the inbrowser version or we could use Remmina for this task.
 
 ---
 
-## Task 5 Access VNC 🠖 RDP 
+## Task 5 Access VNC <> RDP 
 
 ---
 
@@ -127,7 +127,7 @@ However, the mentioned method here is working too.
 
 ---
 
-Task 6 Attack Privilege Escalation 
+## Task 6 Attack Privilege Escalation 
 
 --- 
 
@@ -208,6 +208,18 @@ Found in the output of :
 > this will provide us with a list of password hashes for every account on the machine
 
 ![image](https://user-images.githubusercontent.com/86648102/135430241-41c128b6-e617-4187-9dac-350418c37c0c.png)
+
+---
+
+## Task 8 Conclusion Final Thoughts 
+
+---
+
+Congratulations -- you hacked Atlas!
+
+**We covered initial exploitation of outdated software, as well as exploiting the Windows PrintSpooler and dumping password hashes with Mimikatz.**
+
+
 
 
 
